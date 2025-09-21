@@ -1,65 +1,21 @@
 # Movie Recommender System
 
-## Overview
-This project is a **content-based movie recommender system** built with Python. It suggests movies similar to a given movie using metadata such as genres, keywords, and descriptions. The system demonstrates practical application of machine learning and data analysis in recommendation engines.
+This is a **content-based movie recommender system** built using Python. It recommends movies similar to a selected movie based on genres, keywords, and metadata, demonstrating practical application of **machine learning**, **data analysis**, and **Python programming**.  
 
-## Features
-- Recommend movies similar to a selected movie.
-- Uses a precomputed similarity matrix (`similarity.pkl`) for fast recommendations.
-- Interactive: Users input a movie title to get suggestions.
-- Easy to extend for hybrid or collaborative filtering.
+**Features:** Recommend movies similar to a given title, fast recommendations using a precomputed similarity matrix (`similarity.pkl`), user-friendly input for personalized suggestions, and modular code that is easy to extend.  
 
-## Technologies & Tools
-- **Language:** Python 3.x  
-- **Libraries:** pandas, scikit-learn, pickle, numpy  
-- **Data:** CSV datasets and pickle files  
+**Technologies & Tools:** Python 3.x, pandas, scikit-learn, pickle, numpy, and optionally Streamlit or Tkinter for UI.  
 
-## Installation
-1. Clone the repository:  
-```bash
-git clone https://github.com/kasamsaikiran87/movie-recommender-system.git
-cd movie-recommender-system
-Create a virtual environment (optional but recommended):
+**Dataset:** Includes `movies.csv` with movie metadata (title, genres, cast, keywords, ratings) and `similarity.pkl` for precomputed similarity scores. Note: Due to GitHub file size limits, `similarity.pkl` may need to be downloaded separately if not included.  
 
-python -m venv venv
-# Activate the environment
-venv\Scripts\activate       # Windows
-source venv/bin/activate    # Linux/Mac
+**Installation:** Clone the repository with `git clone https://github.com/kasamsaikiran87/movie-recommender-system.git` and navigate into it. Optionally, create a virtual environment with `python -m venv venv`, activate it (`venv\Scripts\activate` on Windows or `source venv/bin/activate` on Linux/Mac), and install dependencies with `pip install -r requirements.txt`.  
 
+**Usage:** Run `python main.py`, enter a movie name to get top recommendations, and optionally modify the recommendation count in the script.  
 
-Install dependencies:
+**Insights:** Discover movies similar to favorites, demonstrates **content-based filtering**, and can be extended to hybrid models for better personalization.  
 
-pip install -r requirements.txt
+**Future Enhancements:** Add collaborative filtering using user ratings, build a web interface with Streamlit or Flask, and include movie posters, trailers, or interactive visualizations.  
 
-Usage
+**Author:** Saikiran Kasam | GitHub: [https://github.com/kasamsaikiran87](https://github.com/kasamsaikiran87) | Email: kasamsaikiran87@gmail.com  
 
-Make sure movies.csv and similarity.pkl are in the project folder.
-
-Run the main script:
-
-python main.py
-
-
-Enter a movie title to get recommendations.
-
-Dataset
-
-movies.csv contains movie metadata (title, genres, cast, keywords, ratings).
-
-similarity.pkl stores the precomputed similarity matrix for faster computation.
-
-Future Enhancements
-
-Add collaborative filtering for personalized recommendations.
-
-Build a web interface with Streamlit or Flask.
-
-Include movie posters or trailers in the interface.
-
-Author
-
-Saikiran Kasam
-
-GitHub: https://github.com/kasamsaikiran87
-
-Email: kasamsaikiran87@gmail.com
+**License:** MIT License
